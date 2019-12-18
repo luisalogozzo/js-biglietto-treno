@@ -10,7 +10,7 @@
 
 // quanti km l'utente deve percorrere
 
-// eta passeggero
+// etá passeggero
 
 // calcolo prezzo biglietto (numero km * 0.21)
 
@@ -24,7 +24,7 @@ console.log(KmDaPercorrere);
 
 document.getElementById('km').innerHTML = KmDaPercorrere;
 
-var EtaPasseggero = prompt('Inserisca la sua eta');
+var EtaPasseggero = prompt('Inserisca la sua etá');
 console.log(EtaPasseggero);
 
 document.getElementById('eta').innerHTML = EtaPasseggero;
