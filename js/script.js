@@ -33,15 +33,14 @@ var PrezzoBiglietto = (KmDaPercorrere * 0.21);
 console.log(PrezzoBiglietto);
 
 
-
-if (EtaPasseggero > 18 && EtaPasseggero < 65 ) {
-  var TariffaNormale = PrezzoBiglietto;
-} else if (EtaPasseggero <= 18) {
+if (EtaPasseggero < 18) {
   var TariffaMinorenni = PrezzoBiglietto - (PrezzoBiglietto * 20 / 100) ;
   console.log(TariffaMinorenni);
-} else if (EtaPasseggero >= 65) {
+} else if (EtaPasseggero > 65) {
     var TariffaOver = PrezzoBiglietto - (PrezzoBiglietto * 40 / 100) ;
     console.log(TariffaOver);
+} else {
+var  TariffaNormale = PrezzoBiglietto;
 }
 
 document.getElementById('Prezzo-biglietto').innerHTML = TariffaNormale || TariffaMinorenni || TariffaOver;
