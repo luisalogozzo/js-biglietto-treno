@@ -14,7 +14,7 @@
 
 // calcolo prezzo biglietto (numero km * 0.21)
 
-// se < 18 allora -20%;
+// se > 18 allora -20%;
 
 // se < 65 allora -40%;
 
@@ -34,10 +34,10 @@ console.log(PrezzoBiglietto);
 
 
 if (EtaPasseggero < 18) {
-  var TariffaMinorenni = PrezzoBiglietto - (PrezzoBiglietto * 20 / 100) ;
+  var TariffaMinorenni = PrezzoBiglietto - (PrezzoBiglietto * 0.2) ;
   console.log(TariffaMinorenni);
 } else if (EtaPasseggero > 65) {
-    var TariffaOver = PrezzoBiglietto - (PrezzoBiglietto * 40 / 100) ;
+    var TariffaOver = PrezzoBiglietto - (PrezzoBiglietto * 0.4) ;
     console.log(TariffaOver);
 } else {
 var  TariffaNormale = PrezzoBiglietto;
